@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #006400, #228B22);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo-image {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .hero {
+    height: 70vh;
+    background-image: url('hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background: #ffa500;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-5px);
+    background: #e69500;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .services {
+    padding: 4rem 2rem;
+    background: linear-gradient(180deg, #f8f9fa, #e6f7e9);
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #228B22;
+  }
+  
+  .price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem auto;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .price-table th, .price-table td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .price-table th {
+    background: #228B22;
+    color: #fff;
+  }
+  
+  .price-table tbody tr:nth-child(even) {
+    background: #f8f9fa;
+  }
+  
+  .price-table tbody tr:hover {
+    background: #e6f7e9;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(90deg, #006400, #228B22);
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .navbar.active .nav-links {
+      display: flex;
+    }
+  
+    .price-table {
+      font-size: 0.9rem;
+    }
+  }
+  

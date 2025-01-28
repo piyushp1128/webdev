@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agricultural Department of India</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="fakeheader"></div>
+  <header class="header">
+    <div class="logo">
+      <img src="hero.jpg" alt="Farmer Logo" class="logo-image">
+      <h1>Agricultural Dept</h1>
+    </div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Welcome to the Agricultural Department of India</h1>
+    <p>Empowering Farmers, Growing the Nation</p>
+    <a href="#services" class="cta-button">Explore Services</a>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <a href="crop-info.html">
+          <button class="button">Crop Information</button>
+        </a>
+        <p>Learn about various crops and best farming practices.</p>
+      </div>
+      <div class="card">
+        <a href="Subsidies.html">
+          <button class="button">Subsidies</button>
+        </a>
+        <p>Information on government subsidies for farmers.</p>
+      </div>
+      <div class="card">
+        <a href="market.html">
+          <button class="button">Market Prices</button>
+        </a>
+        <p>Get real-time updates on crop market prices.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>The Agricultural Department of India is dedicated to supporting farmers and promoting sustainable agricultural practices across the country.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Agricultural Department of India. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

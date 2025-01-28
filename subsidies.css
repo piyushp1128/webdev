@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #006400, #228B22);
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: translateY(-3px);
+}
+
+.main-content {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: linear-gradient(180deg, #f8f9fa, #e6f7e9);
+}
+
+.intro h1 {
+  font-size: 3rem;
+  color: #006400;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.subsidy-section {
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 800px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subsidy-section h2 {
+  font-size: 1.8rem;
+  color: #228B22;
+  margin-bottom: 0.5rem;
+}
+
+.subsidy-section p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.subsidy-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(90deg, #006400, #228B22);
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .subsidy-section {
+    padding: 1rem;
+  }
+}
